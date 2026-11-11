@@ -1,6 +1,10 @@
 # WolfHouse Resource Pack Builder
 
-This project combines the latest Java resource files from BuddyPack, WolfTeams, WolfSabers, WolfPhone, WolfCraft branding, and WolfCars into one server-ready WolfHouse ZIP. The original plugin projects remain the source of truth; this project does not keep duplicate copies of their assets.
+This public repository combines Java resource files from BuddyPack, WolfTeams, WolfSabers, WolfPhone, WolfCraft branding, and WolfCars into one server-ready WolfHouse ZIP. Plugin code and asset sources live in the private `WolfHouse-Minecraft-Code` repository. This repository retains the existing pack release history and player downloads.
+
+Keep the two checkouts beside each other: `WolfHouse-Minecraft-Code/` and `WolfHouse-ResourcePack/`. Work on plugin code and artwork under `WolfHouse-Minecraft-Code/plugins/<PluginName>`. This builder reads those asset folders through `pack-sources.json`.
+
+The public repository was renamed from `minecraft-`. Keep the permanent player URL below unchanged, and never reuse the old repository name: the old URL relies on GitHub's rename redirect. No resource pack was republished as part of the repository organization.
 
 ## Build the pack
 
@@ -26,7 +30,7 @@ The builder does not upload anything, edit the live server, or restart it.
 
 For a new BuddyPack outfit or color:
 
-1. Add or change the asset in `C:\Users\wolfh\IdeaProjects\BuddyPack\resource-pack\assets`.
+1. Add or change the asset in `../WolfHouse-Minecraft-Code/plugins/BuddyPack/resource-pack/assets`.
 2. Run the WolfHouse build command.
 3. Publish a new GitHub Release (`r2`, `r3`, and so on) and upload the ZIP with the constant asset name `WolfHouse-ResourcePack.zip`.
 4. Keep the existing permanent `resource-pack` URL and update `resource-pack-sha1` from the generated server template.
@@ -39,7 +43,7 @@ The permanent download URL is:
 https://github.com/IronFaith/minecraft-/releases/latest/download/WolfHouse-ResourcePack.zip
 ```
 
-WolfTeams updates follow the same steps using `C:\Users\wolfh\IdeaProjects\WolfTeams\resourcepack\assets`.
+WolfTeams updates follow the same steps using `../WolfHouse-Minecraft-Code/plugins/WolfTeams/resourcepack/assets`.
 
 ## Add a future Java plugin
 
@@ -50,7 +54,7 @@ Add one entry to `pack-sources.json`:
 ```json
 {
   "name": "NewPlugin",
-  "path": "../NewPlugin/resource-pack"
+  "path": "../WolfHouse-Minecraft-Code/plugins/NewPlugin/resource-pack"
 }
 ```
 
@@ -74,12 +78,11 @@ The three checks cover source inventory and pack-format handling, collision reje
 
 ## WolfCars release source
 
-WolfCars assets come from the stable sibling checkout `../WolfCars-release/resource-pack`.
-Create that checkout from the private `IronFaith/WolfCars` repository; the initial accepted
-release was tag `v1.0.15`. The current accepted release is tag `v1.0.22`,
-commit `99b90ec7ecf8e61f26995a6b69a3a0adb9d8935e`.
-Keep this checkout on an accepted release when preparing the master pack. The development
-checkout and unfinished vehicle work remain independent. The pack includes the Corvette,
+WolfCars assets come from `../WolfHouse-Minecraft-Code/plugins/WolfCars/resource-pack`.
+The consolidated source was imported from accepted WolfCars `v1.0.22`, original
+commit `99b90ec7ecf8e61f26995a6b69a3a0adb9d8935e`. The original repository and
+unfinished vehicle worktrees remain available separately. Review all source changes before
+preparing a master pack. The pack includes the Corvette,
 Toyota-style Trail 4x4, Countach, Challenger, Ducati, runabout, drill buggy, and yacht models.
 
 The source repository is private; its rendered resource-pack assets become downloadable

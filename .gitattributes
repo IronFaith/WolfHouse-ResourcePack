@@ -1,0 +1,4 @@
+# Preserve published input bytes across fresh checkouts and Windows Git settings.
+pack.mcmeta -text
+pack.png -text
+branding/** -text

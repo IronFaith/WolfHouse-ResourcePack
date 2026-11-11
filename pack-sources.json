@@ -6,19 +6,19 @@
   "sources": [
     {
       "name": "BuddyPack",
-      "path": "../BuddyPack/resource-pack"
+      "path": "../WolfHouse-Minecraft-Code/plugins/BuddyPack/resource-pack"
     },
     {
       "name": "WolfTeams",
-      "path": "../WolfTeams/resourcepack"
+      "path": "../WolfHouse-Minecraft-Code/plugins/WolfTeams/resourcepack"
     },
     {
       "name": "WolfSabers",
-      "path": "../WolfSabers/resource-pack"
+      "path": "../WolfHouse-Minecraft-Code/plugins/WolfSabers/resource-pack"
     },
     {
       "name": "WolfPhone",
-      "path": "../WolfPhone/resource-pack"
+      "path": "../WolfHouse-Minecraft-Code/plugins/WolfPhone/resource-pack"
     },
     {
       "name": "WolfCraftBranding",
@@ -26,7 +26,7 @@
     },
     {
       "name": "WolfCars",
-      "path": "../WolfCars-release/resource-pack"
+      "path": "../WolfHouse-Minecraft-Code/plugins/WolfCars/resource-pack"
     }
   ]
 }
