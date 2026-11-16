@@ -1,3 +1,16 @@
+# Photon truck compatibility — r29
+
+Master r29 changes only the truck palette's window highlights from translucent
+to opaque. Its geometry and open windows are unchanged. This removes the mixed
+transparency condition reported in [Photon issue 600](https://github.com/sixthsurge/photon/issues/600).
+The visual result still needs checking with Photon enabled in game. All r28
+models, sounds and other assets remain byte-for-byte unchanged. WolfCars stays
+at 1.0.27; no new plugin JAR is required for this resource-pack adjustment.
+
+Ordinary players get the shared engine recordings through the server pack.
+The optional WolfCars Engine client provides continuous synthesis only for the
+player who installs it; it does not broadcast that synthesis to other players.
+
 # Coordinated companions and vehicles release
 
 Master r28 adds Robot A2, BD-1 and R2-D2 models, textures and reaction sounds, plus the matching WolfCars 1.0.27 truck and engine-audio assets. It pairs with WolfCompanions 0.1.25.
