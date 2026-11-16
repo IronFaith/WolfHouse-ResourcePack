@@ -1,3 +1,11 @@
+# Coordinated companions and vehicles release
+
+Master r28 adds Robot A2, BD-1 and R2-D2 models, textures and reaction sounds, plus the matching WolfCars 1.0.27 truck and engine-audio assets. It pairs with WolfCompanions 0.1.25.
+
+WolfCars Engine 0.1.2 is a separate optional Fabric 26.2 client mod: install its JAR alongside Fabric API and restart Minecraft. It uses installed Chrome/Edge/Chromium for continuous local audio. Without it, the master pack supplies fallback engine sounds. The resource pack cannot install client code. Companion voice separately requires Plasmo Voice on the client and server.
+
+The permanent player pack URL and resource-pack UUID remain unchanged. Only the new release SHA-1 changes in server settings.
+
 # WolfHouse Resource Pack Builder
 
 This public repository combines Java resource files from BuddyPack, WolfTeams, WolfSabers, WolfPhone, WolfCraft branding, and WolfCars into one server-ready WolfHouse ZIP. Plugin code and asset sources live in the private `WolfHouse-Minecraft-Code` repository. This repository retains the existing pack release history and player downloads.

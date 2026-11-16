@@ -27,6 +27,10 @@
     {
       "name": "WolfCars",
       "path": "../WolfHouse-Minecraft-Code/plugins/WolfCars/resource-pack"
+    },
+    {
+      "name": "WolfCompanions",
+      "path": "../WolfHouse-Minecraft-Code/plugins/WolfCompanions/resource-pack"
     }
   ]
 }
